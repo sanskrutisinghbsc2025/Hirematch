@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-10-18 06:16:10 UTC",
+  "system_info": {
+    "os_name": "Windows",
+    "os_release": "10",
+    "cpu_architecture": "AMD64",
+    "cpu_count_logical": 8,
+    "cpu_count_physical": 4,
+    "total_ram_gb": 31.71,
+    "available_ram_gb": 20.48,
+    "python_version": "3.11.9"
+  },
+  "config_summary": {
+    "max_resumes_per_session": 100,
+    "processing_batch_size": 25,
+    "semantic_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_dimension": 384
+  },
+  "batch_size": 25,
+  "total_elapsed_seconds": 11.269,
+  "peak_memory_mb": 184.9,
+  "stage_results": [
+    {
+      "stage_name": "1. Job Creation & Criteria Setup",
+      "elapsed_seconds": 0.049,
+      "items_processed": 1,
+      "throughput_per_sec": 20.51,
+      "memory_rss_mb": 177.6,
+      "details": {
+        "job_id": "fe32bb69-1c61-4ac5-aeca-c09fe557d9d1",
+        "session_id": "84c5d7d9-5a52-4ac9-97fa-a044b6f57aa9"
+      }
+    },
+    {
+      "stage_name": "2. Batch Ingestion & Validation",
+      "elapsed_seconds": 1.744,
+      "items_processed": 25,
+      "throughput_per_sec": 14.34,
+      "memory_rss_mb": 179.5,
+      "details": {
+        "enrolled": 25,
+        "duplicates": 0
+      }
+    },
+    {
+      "stage_name": "3. Text Extraction & Structured Parsing",
+      "elapsed_seconds": 5.266,
+      "items_processed": 25,
+      "throughput_per_sec": 4.75,
+      "memory_rss_mb": 180.7,
+      "details": {
+        "processed": 25,
+        "failed": 0
+      }
+    },
+    {
+      "stage_name": "4. Multi-Layer Evidence Evaluation",
+      "elapsed_seconds": 3.145,
+      "items_processed": 25,
+      "throughput_per_sec": 7.95,
+      "memory_rss_mb": 182.7,
+      "details": {
+        "evaluated": 25,
+        "failed": 0
+      }
+    },
+    {
+      "stage_name": "5. Transparent Scoring & Ranking",
+      "elapsed_seconds": 0.386,
+      "items_processed": 25,
+      "throughput_per_sec": 64.83,
+      "memory_rss_mb": 184.6,
+      "details": {
+        "scored_count": 25,
+        "top_candidate": "candidate_021_alice_smith.pdf"
+      }
+    },
+    {
+      "stage_name": "6. Analytics & Traceable Insights Assembly",
+      "elapsed_seconds": 0.315,
+      "items_processed": 1,
+      "throughput_per_sec": 3.17,
+      "memory_rss_mb": 184.9,
+      "details": {
+        "mean_score": 44.7,
+        "skills_analyzed": 4,
+        "criteria_analyzed": 4
+      }
+    },
+    {
+      "stage_name": "7. Multi-Format Report Export (CSV + XLSX)",
+      "elapsed_seconds": 0.363,
+      "items_processed": 2,
+      "throughput_per_sec": 5.51,
+      "memory_rss_mb": 183.6,
+      "details": {
+        "csv_size_kb": 3.8,
+        "xlsx_size_kb": 8.0
+      }
+    }
+  ]
+}
